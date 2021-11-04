@@ -1,4 +1,4 @@
 FROM nginx
-RUN mkdir data
-COPY . data
-COPY nginx.conf /etc/nginx/nginx.conf
+RUN mkdir data && \
+    cp package.json data \
+    && cp nginx.conf /etc/nginx/nginx.conf
