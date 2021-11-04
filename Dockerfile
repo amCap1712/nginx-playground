@@ -1,4 +1,3 @@
 FROM nginx
-RUN mkdir /data
-COPY redirect.json /
+COPY redirect.json /etc/nginx/html/redirect.json
 COPY nginx.conf /etc/nginx/nginx.conf
