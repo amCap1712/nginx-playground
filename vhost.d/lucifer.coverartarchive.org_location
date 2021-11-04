@@ -1,0 +1,5 @@
+if ($invalid_referer) {
+    rewrite ^ /redirect.json break;
+}
+
+proxy_pass http://coverartarchive.org;
